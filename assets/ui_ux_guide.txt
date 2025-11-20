@@ -1,0 +1,7 @@
+UI/UX Guidelines - Checkout Page
+
+- Form validation errors must be displayed in RED text.
+- The “Pay Now” button should be GREEN.
+- Error messages must appear below the input field.
+- Success message “Payment Successful!” must be displayed in a popup or green banner.
+- Radio buttons for Shipping must be clearly visible.

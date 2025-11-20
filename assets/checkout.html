@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Shop Checkout</title>
+</head>
+<body>
+
+<h1>Checkout</h1>
+
+<div id="items">
+    <div class="item">
+        <span class="name">Product A</span>
+        <button id="addA">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <span class="name">Product B</span>
+        <button id="addB">Add to Cart</button>
+    </div>
+</div>
+
+<div id="cart">
+    <h2>Cart Summary</h2>
+    <label>Quantity A: <input type="number" id="qtyA" value="1"></label>
+    <label>Quantity B: <input type="number" id="qtyB" value="1"></label>
+    <p>Total Price: <span id="totalPrice">100</span></p>
+</div>
+
+<div id="discount-section">
+    <label>Discount Code: <input type="text" id="discountCode"></label>
+    <button id="applyDiscount">Apply</button>
+    <p id="discountError" style="color:red; display:none;">Invalid Discount Code</p>
+</div>
+
+<form id="userDetails">
+    <h3>User Details</h3>
+
+    <label>Name: <input type="text" id="name"></label><br>
+    <label>Email: <input type="email" id="email"></label><br>
+    <label>Address: <textarea id="address"></textarea></label><br>
+
+    <h3>Shipping Method</h3>
+    <input type="radio" name="ship" value="standard"> Standard<br>
+    <input type="radio" name="ship" value="express"> Express<br>
+
+    <h3>Payment Method</h3>
+    <input type="radio" name="pay" value="card"> Credit Card<br>
+    <input type="radio" name="pay" value="paypal"> PayPal<br>
+
+    <button id="payNow" style="background:green;">Pay Now</button>
+</form>
+
+<p id="paymentSuccess" style="display:none; color:green;">Payment Successful!</p>
+
+</body>
+</html>
